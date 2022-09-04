@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const BtnEliminar = (id) => {
     console.log(id.id)
@@ -22,7 +23,7 @@ const BtnEliminar = (id) => {
       };
   return (
         <button className='btn btn-danger m-1' onClick={axiosDelete}>
-            Eliminar
+            X
         </button>
   )
 }

@@ -9,25 +9,26 @@ const Home = ()=> {
     const url = "http://localhost:4000/post/";
     const axiosNotas = (url) => {
       axios.get(url).then((data) => {
+
+        
         setNotas(data.data);
-        console.log(data.data);
       });
     };
     useEffect(() => {
       axiosNotas(url);
     }, []);
-    return(
+    return (
       <div className="App">
-      <div className="container mt-5">
-        <Link to={'/CrearNota'}>
-          <button className="btn btn-warning">Crear</button>
-        </Link>
-         
-        <NotaComponent Notas={Notas}/>
+        <div className="container mt-5  ">
+          <div className="">
+            <Link className="p-2" to={"/CrearNota"}>
+              <button className="btn btn-warning ">Crear</button>
+            </Link>
+          </div>
+          <NotaComponent Notas={Notas} />
+        </div>
       </div>
-      
-    </div>
-    )
+    );
   }
 
 export default Home

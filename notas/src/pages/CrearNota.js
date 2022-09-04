@@ -50,7 +50,7 @@ const CrearNota = () => {
   };
 
   return (
-    <div className="p-3">
+    <div className="p-5">
        <form >
       <div className="mb-3 ">
         <label className="form-label">Titulo de la Nota</label>
@@ -68,7 +68,7 @@ const CrearNota = () => {
           className="form-control"
           placeholder="...."
           id="exampleFormControlTextarea1"
-          rows="3"
+          rows="10"
         ></textarea>
       </div>
 
