@@ -6,11 +6,10 @@ import NotaComponent from "../Components/NotaComponent";
 
 const Home = ()=> {
     const [Notas, setNotas] = useState([]);
-    const url = "http://localhost:4000/post/";
+    const url = "https://example-app-express.herokuapp.com/post";
     const axiosNotas = (url) => {
       axios.get(url).then((data) => {
 
-        
         setNotas(data.data);
       });
     };

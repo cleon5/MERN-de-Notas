@@ -19,7 +19,7 @@ const CrearNota = () => {
   }
 
   const axiosPost = () => {
-    const url = "http://localhost:4000/post/";
+    const url = "https://example-app-express.herokuapp.com/post";
     const customConfig = {
       headers: {
         "Content-Type": "application/json",
@@ -73,6 +73,7 @@ const CrearNota = () => {
       </div>
 
       <div className="mb-3 justify-content-center">
+      <Link to={"/"}>
           <button
             type="button"
             className="btn btn-primary btn-lg"
@@ -80,7 +81,8 @@ const CrearNota = () => {
           >
             Guardar Nota
           </button>
-        
+          </Link>
+
         <Link to={"/"}>
           <button
             type="button"

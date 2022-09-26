@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 const EditarNota = () => {
   let { id } = useParams();
   const [Nota, setNota] = useState([]);
-  const url = "http://localhost:4000/post/" + id;
+  const url = "https://example-app-express.herokuapp.com/post" + id;
 
   const axiosNota = (url) => {
     axios.get(url).then((data = data.data) => {

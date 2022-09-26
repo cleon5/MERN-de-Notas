@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const BtnEliminar = (id) => {
     console.log(id.id)
-    const url = "http://localhost:4000/post/"+id.id;
+    const url = "https://example-app-express.herokuapp.com/post/"+id.id;
+    console.log(url)
     const axiosDelete = () => {
         const customConfig = {
           headers: {
