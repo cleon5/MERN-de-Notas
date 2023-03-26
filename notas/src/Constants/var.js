@@ -1,1 +1,1 @@
-export const URL = "springbootmongodbnotas-production.up.railway.app/api/tarea" 
+export const URL = "https://springbootmongodbnotas-production.up.railway.app/api/tarea" 
