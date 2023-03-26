@@ -2,11 +2,11 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import NotaComponent from "../Components/NotaComponent";
-
+import { URL } from '../Constants/var';
 
 const Home = ()=> {
     const [Notas, setNotas] = useState([]);
-    const url = "https://example-app-express.herokuapp.com/post";
+    const url = URL;
     const axiosNotas = (url) => {
       axios.get(url).then((data) => {
 

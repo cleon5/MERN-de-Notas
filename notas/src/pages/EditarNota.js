@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import { URL } from '../Constants/var';
 
 const EditarNota = () => {
   let { id } = useParams();
   const [Nota, setNota] = useState([]);
-  const url = "https://example-app-express.herokuapp.com/post" + id;
+  const url = URL + "/"+id;
 
   const axiosNota = (url) => {
     axios.get(url).then((data = data.data) => {

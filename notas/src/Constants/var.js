@@ -1,0 +1,1 @@
+export const URL = "springbootmongodbnotas-production.up.railway.app/api/tarea" 

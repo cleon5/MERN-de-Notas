@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams} from "react-router-dom";
+import { URL } from '../Constants/var';
 
 const CrearNota = () => {
   
@@ -19,7 +20,7 @@ const CrearNota = () => {
   }
 
   const axiosPost = () => {
-    const url = "https://example-app-express.herokuapp.com/post";
+    const url = URL;
     const customConfig = {
       headers: {
         "Content-Type": "application/json",
